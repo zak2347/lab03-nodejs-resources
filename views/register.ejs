@@ -1,60 +1,37 @@
 <%- include('header'); -%>
- <form method="POST" action="/api/register">
-     
-    <br>
-    <label>Username</label>
-    <input type="text" name="username" placeholder="Please enter your username">
-    <br>
-    <br>
-    <label>Password</label>
-    <input type="password" name="password" placeholder="Please enter your password">
-    <br>
-    <br>
-    <label>Society</label>
-    <input type="text" name="society" placeholder="Please enter your society">
-    <br>
-    <br>
-    <label>Contact Name</label>
-    <input type="text" name="contact" placeholder="Please enter your contact name">
-    <br>
-    <br>
-    <label>Adress</label>
-    <input type="text" name="adress" placeholder="Please enter your adress">
-    <br>
-    <br>
-    <label>Zipcode</label>
-    <input type="text" name="zipcode" placeholder="Please enter your zipcode">
-    <br>
-    <br>
-    <label>City</label>
-    <input type="text" name="city" placeholder="Please enter your city">
-    <br>
-    <br>
-    <label>Phone</label>
-    <input type="text" name="phone" placeholder="Please enter your phone">
-    <br>
-    <br>
-    <label>Fax</label>
-    <input type="text" name="fax" placeholder="Please enter your fax">
-    <br>
-    <br>
-    <label>Confirmation</label>
-    <input type="text" name="confirmation" placeholder="Please enter your confirmation">
-    <br>
-    <br>
-    <label>Payment</label>
-    <input type="text" name="payment" placeholder="Please enter your payment">
-    <br>
-    <br>
-    <label>Information</label>
-    <input type="text" name="information" placeholder="Please enter your information">
-    <br>
-    <br>
-    <label>Max Outstanding</label>
-    <input type="text" name="max_outstanding" placeholder="Please enter your max outstanding">
-    <br>
-    <br>
-    <button>Submit</button>
-
- </form>
-<%- include('footer'); -%>
+    <div class='content'>
+        <form action="/api/register" method="post">
+            <label for="username">Username:</label>
+            <br>
+            <input type="text" name="username" placeholder="Username" required autofocus><br>
+            <label for="password">Password:</label>
+            <br>
+            <input type="password" name="passwsord" placeholder="Password" required><br>
+            <label for="society">Society:</label>
+            <br>
+            <input type="text" name="society" placeholder="Society" required><br>
+            <label for="contact">Contact:</label>
+            <br>
+            <input type="text" name="contact" placeholder="Contact" required><br>
+            <label for="address">Address:</label>
+            <br>
+            <input type="text" name="address" placeholder="Address" required><br>
+            <label for="zipcode">Zipcode:</label>
+            <br>
+            <input type="text" name="zipcode" placeholder="Zipcode" required><br>
+            <label for="city">City:</label>
+            <br>
+            <input type="text" name="city" placeholder="City" required><br>
+            <label for="phone">Phone:</label>
+            <br>
+            <input type="text" name="phone" placeholder="Phone Number" required><br>
+            <label for="fax">Fax number:</label>
+            <br>
+            <input type="text" name="fax" placeholder="Fax number" required><br>
+            <label for="max_outstanding">Maximum Outstanding:</label>
+            <br>
+            <input type="text" name="max_outstanding" placeholder="Maximum Outstanding" required><br>
+            <button type="submit">Register</button><br>
+        </form>
+    </div>
+    <%- include('footer'); -%>
