@@ -5,7 +5,7 @@ const bcrypt = require("bcryptjs");
 
 
 const loginService = (typedUsername, typedPassword, callback) => {
-    //check if the user is in the DB
+    //check if the user is in the DB.
     clientDAO.findByUsername(typedUsername, function(err, rows) {
         if (err) {
             throw err;
